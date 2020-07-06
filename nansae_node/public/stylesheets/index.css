@@ -5,41 +5,53 @@ body {
     background-color: #F8F8F8;
 }
 
-.logout {
-    margin-top: 10px;
-    margin-right: 30px;
-    list-style:none;
-    cursor:pointer;
-    transition:all .3s ease;
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
-.logout:hover { color:#39d9c8; transition:all .3s ease }
-.logout > span { position:relative }
 
-button:hover {
+.sofa {
+    margin-top: 137px;
+}
+.sofa img {
+    width: 688px;
+    height: auto;
+}
+
+.text {
+    margin-top: 172px;
+    margin-right: 377px;
+}
+
+.main_text {
+    font-size: 110px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.subtitle span {
+    color: #005BAC;
+}
+
+.text button {
+    border: 1px solid #000000;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 20px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(82, 83, 82, .4);
+}
+
+.text button:hover {
     color:#39d9c8;
     font-weight: 500
-}
-
-/*밑줄넣기 부분*/
-span::after {
-    content: '';
-    width: 0%;
-    left: 50%;
-    height: 1px;
-    display: block;
-    position: absolute;
-    margin-top: 3px;
-    border-bottom: 2px solid #39d9c8;
-    transition:all .3s ease;
-}
-.logout:hover > span::after {
-    content: '';
-    width: 100%;
-    left: 0px;
-    height: 1px;
-    display: block;
-    position: absolute;
-    margin-top: 3px;
-    border-bottom: 2px solid #39d9c8;
-    transition:all .3s ease;
 }
