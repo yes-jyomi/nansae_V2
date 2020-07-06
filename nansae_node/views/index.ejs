@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><%= title %></title>
+
+  <!-- 반응형 bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- 로고 연결 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
+  <link rel="shortcut icon" type="image/png" href="/images/icon.png" sizes="192x192"/>
+
+  <!-- CSS 연결 -->
+  <link rel="stylesheet" href="/stylesheets/index.css" />
+  <link rel="stylesheet" href="/stylesheets/navigation.css" />
+  <link rel="stylesheet" href="/stylesheets/footer.css" />
+</head>
+<body>
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <!-- 로고 -->
+      <a class="navbar-brand" href="/"><img src="/images/nav_logo.png" class="nav_logo"></a>
+
+      <!-- 햄버거 버튼 -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+
+          <!-- Our Team -->
+          <li class="nav-item">
+            <a class="nav-link" href="/calendar" style="padding-right: 38px;">CALENDAR</a>
+          </li>
+
+          <!-- Our Work -->
+          <li class="nav-item">
+            <a class="nav-link" href="/license" style="padding-right: 38px;">LICENSE</a>
+          </li>
+
+          <!-- In the News -->
+          <li class="nav-item">
+            <a class="nav-link" href="/outdoor" style="padding-right: 38px;">OUTDOOR</a>
+          </li>
+
+          <!-- Work with Us -->
+          <li class="nav-item">
+            <a class="nav-link" href="/users" style="padding-right: 38px;">PROFILE</a>
+          </li>
+
+          <!-- Work with Us -->
+          <li class="nav-item">
+            <a class="nav-link" href="/portfolio">PORTFOLIO</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div style="width: 100%; display: flex; justify-content: flex-end;">
+  <li class="logout">
+    <span onclick="alert('전시 중에는 편의를 위해 로그아웃을 막아놓았습니다.');">LOGOUT</span>
+  </li>
+</div>
+
+<div style="width: 100%; display: flex; justify-content: space-between;">
+  <div style="margin-top: 137px;">
+    <img src="/images/main_sofa.png" style="width: 688px; height: auto;" />
+  </div>
+
+  <div style="margin-top: 172px; margin-right: 377px;">
+    <span style="font-size: 110px; font-weight: bold;">
+      난
+      <br/>
+      새로운
+      <br/>
+      길로 간다_!
+    </span>
+
+    <div style="font-size: 25px; font-weight: normal; margin-left: 20px;">
+      효율은 <span style="color: #005BAC;">UP!</span> 주머니는 <span style="color: #005BAC;">DOWN!</span>
+      <br/>
+      당신의 포트폴리오를 관리해보세요
+    </div>
+
+    <button style="border: 1px solid #000000; width: 200px; height: 50px; box-sizing: border-box; text-align: center; margin-top: 70px; margin-left: 20px; background-color: white; box-shadow: 0 0 5px rgba(82, 83, 82, .4);">START</button>
+  </div>
+</div>
+
+</body>
+</html>
