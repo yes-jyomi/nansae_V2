@@ -53,6 +53,8 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .portfolio .profile {
@@ -72,4 +74,13 @@ hr {
 
 .info tr {
     height: 50px;
+}
+
+th {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+td {
+    padding: 5px;
 }
