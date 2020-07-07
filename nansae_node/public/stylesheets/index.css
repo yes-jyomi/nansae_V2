@@ -55,3 +55,6 @@ body {
     color:#39d9c8;
     font-weight: 500
 }
+body::-webkit-scrollbar {
+     display: none; /* Chrome, Safari, Opera*/
+ }
