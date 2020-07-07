@@ -1,60 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #F8F8F8;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
 }
 
 .content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sofa {
-    margin-top: 137px;
+  margin-top: 137px;
 }
 .sofa img {
-    width: 688px;
-    height: auto;
+  width: 688px;
+  height: auto;
 }
 
 .text {
-    margin-top: 172px;
-    margin-right: 377px;
+  margin-top: 172px;
+  margin-right: 377px;
 }
 
 .main_text {
-    font-size: 110px;
-    font-weight: bold;
+  font-size: 110px;
+  font-weight: bold;
 }
 
 .subtitle {
-    font-size: 25px;
-    font-weight: normal;
-    margin-left: 20px;
+  font-size: 25px;
+  font-weight: normal;
+  margin-left: 20px;
 }
 
 .subtitle span {
-    color: #005BAC;
+  color: #005bac;
 }
 
 .text button {
-    border: 1px solid #000000;
-    width: 200px;
-    height: 50px;
-    box-sizing: border-box;
-    text-align: center;
-    margin-top: 70px;
-    margin-left: 20px;
-    background-color: white;
-    box-shadow: 0 0 5px rgba(82, 83, 82, .4);
+  border: 1px solid #000000;
+  width: 200px;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 20px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(82, 83, 82, 0.4);
 }
 
 .text button:hover {
-    color:#39d9c8;
-    font-weight: 500
+  color: #39d9c8;
+  font-weight: 500;
 }
 body::-webkit-scrollbar {
-     display: none; /* Chrome, Safari, Opera*/
- }
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+@media (max-width: 975px) {
+  .sofa img {
+    width: 275px;
+    height: auto;
+  }
+  .text {
+    margin-top: 182px;
+    margin-right: 377px;
+    margin-left: 20px;
+  }
+  .main_text {
+    font-size: 36px;
+  }
+  .subtitle {
+    font-size: 11px;
+    margin-left: 8px;
+  }
+  .text button {
+    width: 170px;
+    height: 45px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+}
