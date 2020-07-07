@@ -58,10 +58,10 @@
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1180px;
+        max-width: 1550px;
     }
     .container {
-        width: 1180px;
+        width: 1550px;
         padding: 0;
         margin-left: 370px;
     }
