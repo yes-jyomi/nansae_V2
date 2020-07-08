@@ -79,24 +79,25 @@ hr {
 }
 @media (max-width: 975px) {
   .title span {
-    font-size: 62px;
+    font-size: 50px;
     font-weight: bold;
   }
   .title button {
     background-color: #005bac;
-    width: 130px;
+    width: 100px;
     height: 40px;
   }
   .license {
-    width: 360px;
+    width: 310px;
     height: 200px;
     background-color: white;
     box-shadow: 0 0 5px rgba(82, 83, 82, 0.4);
     margin-bottom: 30px;
-    margin-left: 70px;
+    margin-left: 50px;
   }
 
-  .title{
+  .title {
     margin-top: 100px;
+    width: 95%;
   }
 }

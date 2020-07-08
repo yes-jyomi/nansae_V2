@@ -141,19 +141,19 @@ tr td:active {
 
 @media (max-width: 975px) {
   .container_left {
-    width: 2000px;
+    width: 370px;
     padding: 10px;
-    height: 1000px;
-    /* margin-top: -100px; */
+    height: 900px;
+    margin-top: 100px;
   }
   .container_right {
-    width: 1100px;
+    width: 370px;
     padding: 10px;
-    height: 440px;
+    height: 385px;
     background-color: white;
     margin-top: 50px;
     position: absolute;
-    top: 500px;
+    top: 565px;
   }
   .calendar_container {
     position: relative;
@@ -165,15 +165,11 @@ tr td:active {
     justify-content: space-evenly;
   }
   tr td {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     border: 0px;
-  }
-
-  ul{
-    flex-direction: column;
   }
 }

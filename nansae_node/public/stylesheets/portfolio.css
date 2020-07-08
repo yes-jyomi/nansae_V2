@@ -85,6 +85,18 @@ td {
   padding: 5px;
 }
 
+.li,
+.ou,
+.pr {
+  width: 100%;
+  font-size: 20px;
+}
+.li2,
+.ou2,
+.pr2 {
+  font-size: 30px;
+  font-weight: bold;
+}
 @media (max-width: 975px) {
   .title span {
     font-size: 2px;
@@ -93,22 +105,56 @@ td {
 
   .title button {
     background-color: #005bac;
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    border: 0;
-    box-shadow: 0 0 5px rgba(82, 83, 82, 0.4);
-    color: white;
-    font-size: 25px;
-    font-weight: normal;
+    width: 100px;
+    height: 40px;
+    margin-right: 400px;
   }
   .portfolio {
-    width: 40%;
+    width: 38%;
     background-color: white;
     box-shadow: 0 0 5px rgba(82, 83, 82, 0.4);
     box-sizing: border-box;
     padding: 98px;
     margin-bottom: 50px;
-    margin-left: 500px;
+    margin-left: 370px;
+  }
+  .portfolio .profile img {
+    width: 150%;
+    margin-left: -1px;
+    height: auto;
+  }
+  .info {
+    margin-left: -220px;
+    margin-top: 300px;
+  }
+  .li {
+    width: 120%;
+    font-size: 15px;
+    margin-left: -65px;
+  }
+  .li2 {
+    font-size: 30px;
+    margin-left: -65px;
+    font-weight: bold;
+  }
+  .ou {
+    width: 130%;
+    font-size: 15px;
+    margin-left: -65px;
+  }
+  .ou2 {
+    font-size: 30px;
+    margin-left: -65px;
+    font-weight: bold;
+  }
+  .pr {
+    width: 160%;
+    font-size: 10px;
+    margin-left: -65px;
+  }
+  .pr2 {
+    font-size: 30px;
+    margin-left: -65px;
+    font-weight: bold;
   }
 }
