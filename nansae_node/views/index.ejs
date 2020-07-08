@@ -7,10 +7,10 @@
   <title><%= title %></title>
 
   <!-- 반응형 bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- 로고 연결 -->
   <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
@@ -24,51 +24,28 @@
 <body>
 
 <!-- NAVIGATION BAR -->
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container">
-    <!-- 로고 -->
-    <a class="navbar-brand" href="/"><img src="/images/nav_logo.png" class="nav_logo"></a>
-
-    <!-- 햄버거 버튼 -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="glyphicon glyphicon-menu-hamburger"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 500px;">
-      <ul class="navbar-nav ml-auto">
-
-        <!-- Our Team -->
-        <li class="nav-item">
-          <a class="nav-link" href="/calendar" style="padding-right: 38px;">CALENDAR</a>
-        </li>
-
-        <!-- Our Work -->
-        <li class="nav-item">
-          <a class="nav-link" href="/license" style="padding-right: 38px;">LICENSE</a>
-        </li>
-
-        <!-- In the News -->
-        <li class="nav-item">
-          <a class="nav-link" href="/outdoor" style="padding-right: 38px;">OUTDOOR</a>
-        </li>
-
-        <!-- Work with Us -->
-        <li class="nav-item">
-          <a class="nav-link" href="/users" style="padding-right: 38px;">PROFILE</a>
-        </li>
-
-        <!-- Work with Us -->
-        <li class="nav-item">
-          <a class="nav-link" href="/portfolio">PORTFOLIO</a>
-        </li>
-
-      </ul>
+<nav class="navbar navbar-inverse" style = "border: 0px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src = "/images/nav_logo.png" width = "59px" height = "27px"></a>
     </div>
-
-    <div class="logout">
-      <li>
-        <span onclick="alert('전시 중에는 편의를 위해 로그아웃을 막아놓았습니다.');">LOGOUT</span>
-      </li>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/index">HOME</a></li>
+        <li><a href="/calendar">CALENDAR</a></li>
+        <li><a href="/license">LISENCE</a></li>
+        <li><a href="/outdoor">OUTDOOR</a></li>
+        <li><a href="/portfolio">PORTFOLIO</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <div class = "logout">
+        <li><span class="glyphicon glyphicon-log-in" onClick = "alert('전시 중에는 편의를 위해 로그아웃을 막아놓았습니다.');"> <b>LOGOUT</b></span></li></div>
+      </ul>
     </div>
   </div>
 </nav>
@@ -81,9 +58,9 @@
   <div class="text">
     <span class="main_text">
       난
-      <br/>
+      <br>
       새로운
-      <br/>
+      <br>
       길로 간다_!
     </span>
 

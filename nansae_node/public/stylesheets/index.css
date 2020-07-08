@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #F8F8F8;
+    /*background-color: #F8F8F8;*/
 }
 
 .content {
@@ -57,4 +57,29 @@ body {
 }
 body::-webkit-scrollbar {
      display: none; /* Chrome, Safari, Opera*/
+ }
+
+ @media (max-width: 975px) {
+    .sofa img {
+        width: 300px;
+        height: auto;
+      }
+      .text {
+        margin-top: 182px;
+        margin-right: 377px;
+        margin-left: 20px;
+      }
+      .main_text {
+        font-size: 36px;
+      }
+      .subtitle {
+        font-size: 11px;
+        margin-left: 8px;
+      }
+      .text button {
+        width: 170px;
+        height: 45px;
+        margin-top: 30px;
+        margin-left: 10px;
+      }
  }
