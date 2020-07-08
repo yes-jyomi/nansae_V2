@@ -157,4 +157,12 @@ td {
     margin-left: -65px;
     font-weight: bold;
   }
+
+  hr{
+    display: none;
+  }
+
+  td{
+      flex-direction: column;
+  }
 }
