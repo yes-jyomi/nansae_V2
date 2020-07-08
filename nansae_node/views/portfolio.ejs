@@ -1,125 +1,251 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title><%= title %></title>
 
     <!-- 반응형 bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <!-- 로고 연결 -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
-    <link rel="shortcut icon" type="image/png" href="/images/icon.png" sizes="192x192"/>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/images/icon.png"
+      sizes="192x192"
+    />
 
     <!-- CSS 연결 -->
     <link rel="stylesheet" href="/stylesheets/portfolio.css" />
     <link rel="stylesheet" href="/stylesheets/logout.css" />
     <link rel="stylesheet" href="/stylesheets/navigation.css" />
-</head>
-<body>
-
-<!-- NAVIGATION BAR -->
-<nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
         <!-- 로고 -->
-        <a class="navbar-brand" href="/"><img src="/images/nav_logo.png" class="nav_logo"></a>
+        <a class="navbar-brand" href="/"
+          ><img src="/images/nav_logo.png" class="nav_logo"
+        /></a>
 
         <!-- 햄버거 버튼 -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="glyphicon glyphicon-menu-hamburger"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 500px;">
-            <ul class="navbar-nav ml-auto">
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="margin-left: 620px;"
+        >
+          <ul class="navbar-nav ml-auto">
+            <!-- Our Team -->
+            <li class="nav-item">
+              <a class="nav-link" href="/calendar" style="padding-right: 38px;"
+                >CALENDAR</a
+              >
+            </li>
 
-                <!-- Our Team -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/calendar" style="padding-right: 38px;">CALENDAR</a>
-                </li>
+            <!-- Our Work -->
+            <li class="nav-item">
+              <a class="nav-link" href="/license" style="padding-right: 38px;"
+                >LICENSE</a
+              >
+            </li>
 
-                <!-- Our Work -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/license" style="padding-right: 38px;">LICENSE</a>
-                </li>
+            <!-- In the News -->
+            <li class="nav-item">
+              <a class="nav-link" href="/outdoor" style="padding-right: 38px;"
+                >OUTDOOR</a
+              >
+            </li>
 
-                <!-- In the News -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/outdoor" style="padding-right: 38px;">OUTDOOR</a>
-                </li>
-
-                <!-- Work with Us -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/users" style="padding-right: 38px;">PROFILE</a>
-                </li>
-
-                <!-- Work with Us -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/portfolio">PORTFOLIO</a>
-                </li>
-
-            </ul>
+            <!-- Work with Us -->
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio">PORTFOLIO</a>
+            </li>
+          </ul>
         </div>
 
         <div class="logout">
-            <li>
-                <span onclick="alert('전시 중에는 편의를 위해 로그아웃을 막아놓았습니다.');">LOGOUT</span>
-            </li>
+          <li>
+            <span
+              onclick="alert('전시 중에는 편의를 위해 로그아웃을 막아놓았습니다.');"
+              >LOGOUT</span
+            >
+          </li>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<div class="contents">
-    <div class="content">
+    <div class="contents">
+      <div class="content">
         <div class="title">
-            <span>PORTFOLIO</span>
-            <button>NEW</button>
+          <span>PORTFOLIO</span>
+          <button>NEW</button>
         </div>
-
-        <hr>
 
         <div class="portfolio">
-<!--            image -->
+          <div style="display: flex; flex-direction: row;">
+            <!--image -->
             <div class="profile">
-                <img src="/images/port_test.png" />
+              <img src="/images/port_test.png" />
             </div>
 
-<!--            info -->
+            <!--info -->
             <div class="info">
-                <table>
-                    <tr>
-                        <td style="width: 150px;">이름</td>
-                        <td colspan="3">어쩌구</td>
-                    </tr>
-                    <tr>
-                        <td>전화번호</td>
-                        <td style="width: 150px;">010-XXXX-XXXX</td>
-                        <td style="width: 150px;">이메일</td>
-                        <td style="width: 200px;">어쩌구</td>
-                    </tr>
-                    <tr>
-                        <td>생년월일</td>
-                        <td>20XX.XX.XX</td>
-                        <td>성별</td>
-                        <td>어쩌구</td>
-                    </tr>
-                    <tr>
-                        <td>주소</td>
-                        <td colspan="3">어쩌구</td>
-                    </tr>
-                    <tr>
-                        <td>Github URL</td>
-                        <td colspan="3">https://github.com/XXXXXXXXXXX</td>
-                    </tr>
-                </table>
+              <table>
+                <tr>
+                  <td style="width: 150px;">이름</td>
+                  <td colspan="3">어쩌구</td>
+                </tr>
+                <tr>
+                  <td>전화번호</td>
+                  <td style="width: 150px;">010-XXXX-XXXX</td>
+                  <td style="width: 150px;">이메일</td>
+                  <td style="width: 200px;">어쩌구</td>
+                </tr>
+                <tr>
+                  <td>생년월일</td>
+                  <td>20XX.XX.XX</td>
+                  <td>성별</td>
+                  <td>어쩌구</td>
+                </tr>
+                <tr>
+                  <td>주소</td>
+                  <td colspan="3">어쩌구</td>
+                </tr>
+                <tr>
+                  <td>Github URL</td>
+                  <td colspan="3">https://github.com/XXXXXXXXXXX</td>
+                </tr>
+              </table>
             </div>
-        </div>
-    </div>
-</div>
+          </div>
+          <!-- license -->
+          <div style="width: 984px; height: auto; margin-top: 98px;">
+            <span style="font-size: 30px; font-weight: bold;">자격증</span>
+            <hr />
+            <table style="width: 100%; font-size: 20px;">
+              <thead>
+                <tr>
+                  <th width="340px;">자격증명</th>
+                  <th>발행날짜</th>
+                  <th>발행처</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>ITQ 엑셀</td>
+                <td>20XX.XX.XX</td>
+                <td>AAA</td>
+              </tr>
+              <tr>
+                <td>ITQ 파워포인트</td>
+                <td>20XX.XX.XX</td>
+                <td>AAA</td>
+              </tr>
+              <tr>
+                <td>한국사검정능력시험</td>
+                <td>20XX.XX.XX</td>
+                <td>AAA</td>
+              </tr>
+            </table>
+          </div>
 
-</body>
+          <!-- outdoor -->
+          <div style="width: 984px; height: auto; margin-top: 98px;">
+            <span style="font-size: 30px; font-weight: bold;">외부활동</span>
+            <hr />
+            <table style="width: 100%; font-size: 20px;">
+              <thead>
+                <tr>
+                  <th width="340px;">외부활동명</th>
+                  <th>날짜</th>
+                  <th>활동장소</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>사제동행</td>
+                <td>20XX.XX.XX</td>
+                <td>AAA</td>
+              </tr>
+              <tr>
+                <td>사제동행</td>
+                <td>20XX.XX.XX</td>
+                <td>AAA</td>
+              </tr>
+              <tr>
+                <td>사제동행</td>
+                <td>20XX.XX.XX</td>
+                <td>AAA</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- project -->
+          <div style="width: 984px; height: auto; margin-top: 98px;">
+            <span style="font-size: 30px; font-weight: bold;"
+              >프로젝트 수행 기술서</span
+            >
+            <hr />
+            <table style="width: 100%; font-size: 16px;">
+              <thead>
+                <tr>
+                  <th width="100px;">기간</th>
+                  <th width="150px;">프로젝트명</th>
+                  <th width="114px;">발주처</th>
+                  <th width="250px;">프로젝트 내용</th>
+                  <th width="200px;">구현 툴 / 언어</th>
+                  <th width="200px;">담당 업무</th>
+                  <th width="70px;">비고</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>2020.02.14-2020.02.23</td>
+                <td>상상로켓</td>
+                <td>일본 글로벌 인턴십</td>
+                <td>여행하는 사람을 위한 자전거 대여 서비스</td>
+                <td>
+                  VisualStudio, Photoshop / Python, Django, HTML, CSS,
+                  JavaScript
+                </td>
+                <td>백엔드 개발자</td>
+                <td>비고</td>
+              </tr>
+              <tr>
+                <td>2020.02.14-2020.02.23</td>
+                <td>상상로켓</td>
+                <td>일본 글로벌 인턴십</td>
+                <td>여행하는 사람을 위한 자전거 대여 서비스</td>
+                <td>
+                  VisualStudio, Photoshop / Python, Django, HTML, CSS,
+                  JavaScript
+                </td>
+                <td>백엔드 개발자</td>
+                <td>비고</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
