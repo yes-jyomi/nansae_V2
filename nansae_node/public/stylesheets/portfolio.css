@@ -85,7 +85,7 @@ td {
   padding: 5px;
 }
 
-/* @media (max-width: 975px) {
+@media (max-width: 975px) {
   .title span {
     font-size: 2px;
     font-weight: bold;
@@ -111,4 +111,4 @@ td {
     margin-bottom: 50px;
     margin-left: 500px;
   }
-} */
+}
