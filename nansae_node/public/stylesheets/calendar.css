@@ -139,6 +139,11 @@ tr td:active {
   transform: scale(0.85);
 }
 
+.logout {
+  position: relative;
+  right: 20px;
+}
+
 @media (max-width: 975px) {
   .container_left {
     width: 370px;
